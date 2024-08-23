@@ -26,7 +26,7 @@
 
 5. `npm run docs:dev`コマンドを実行（ページのプレビューが開始されます）
 
-6. ブラウザで [http://localhost:5173/matome/](http://localhost:5173/matome/) を開きプレビュー
+6. ブラウザで`http://localhost:5173/matome/`を開きプレビュー
 
 ## 既存のページの編集
 
@@ -58,6 +58,6 @@ Pull Requestを投げる前に実際にページをビルドして確認しま�
 
 3. `npm run docs:preview`コマンドを実行（ビルドしたもののプレビューが開始されます）
 
-4. ブラウザで [http://localhost:4173/matome/](http://localhost:4173/matome/) を開き最終確認
+4. ブラウザで`http://localhost:4173/matome/`を開き最終確認
 
 5. 問題なければGitHubでPull Requestを投げる

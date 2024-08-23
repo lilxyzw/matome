@@ -34,6 +34,11 @@ export const ja = defineConfig({
         text: 'ワールド',
         link: langName + '/world/',
         collapsed: false
+      },
+      {
+        text: 'ページの編集・追加について',
+        link: langName + '/publish',
+        collapsed: false
       }
     ],
     search: {

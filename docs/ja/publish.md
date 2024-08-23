@@ -10,7 +10,11 @@
 
 2. [NVM for Windows](https://github.com/coreybutler/nvm-windows/releases)をインストール（既にnvm環境がある場合はそれでも可）
 
-3. コマンドプロンプトを開き`cd [ディレクトリ]`コマンドで手順1でcloneしたディレクトリに移動
+3. コマンドプロンプトを開き`nvm list available`コマンドを実行しバージョンを確認
+
+4. `nvm install [バージョン番号]`でNode.jsをインストールし、`nvm use [バージョン番号]`でインストールしたものを有効化（インストールするバージョンは基本的にLTSの最新で大丈夫かと思われます。）
+
+5. `cd [ディレクトリ]`コマンドで手順1でcloneしたディレクトリに移動
    ```
    matome ← このフォルダ
     ├ .github
@@ -22,11 +26,11 @@
     ├ package.json
    ```
 
-4. `npm ci`コマンドを実行（前提パッケージがインストールされます）
+6. `npm ci`コマンドを実行（前提パッケージがインストールされます）
 
-5. `npm run docs:dev`コマンドを実行（ページのプレビューが開始されます）
+7. `npm run docs:dev`コマンドを実行（ページのプレビューが開始されます）
 
-6. ブラウザで`http://localhost:5173/matome/`を開きプレビュー
+8. ブラウザで`http://localhost:5173/matome/`を開きプレビュー
 
 ## 既存のページの編集
 

@@ -28,7 +28,7 @@ VRChat公式が用意しているツールをお手軽インストールでき�
 
 ![インストーラーの画面3](/images/ja/common/installwithvpm/install3.png "インストーラーの画面3")
 
-![インストーラーの画面4](/images/ja/common/installwithvpm/install1.png "インストーラーの画面4")
+![インストーラーの画面4](/images/ja/common/installwithvpm/install4.png "インストーラーの画面4")
 
 4. これでインストールは完了です！ショートカットか検索バーからALCOMを起動してみましょう。
 

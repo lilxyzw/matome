@@ -22,8 +22,8 @@ export const shared = defineConfig({
       { icon: 'github', link: 'https://github.com/lilxyzw/matome' }
     ],
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright @ 2024-present lilxyzw'
+      message: 'Released under the CC BY 4.0.',
+      copyright: 'Copyright @ 2024-present authors'
     },
     editLink: {
       pattern: 'https://github.com/lilxyzw/matome/edit/docs/docs/:path',

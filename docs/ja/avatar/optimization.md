@@ -15,13 +15,13 @@
 
 [パフォーマンスランク](https://creators.vrchat.com/avatars/avatar-performance-ranking-system/)があまりにも酷い場合は制限に引っかかり、他人視点から見たときにあなたの改変したアバターがちゃんと表示されなくなることがあります。つまり「多くの人に改変したアバターをちゃんと見てもらえるようにできる」というのが最大のメリットになります。逆にいえばフレンド以外の前で使わないアバターは無理に最適化しなくても良く、人前で使うアバターだけ最適化すればいいということでもあります。
 
-あなたのアバターはインスタンスにいるみんなのCPUやGPUのリソースを使って表示されているため、極端に重いアバターを使うと迷惑になってしまうことがあります。そこで「みんなの負担を減らして快適にVRChatをできるようにしよう」というのが最適化・軽量化の本来の目的ですが、こちらは自分にとってのメリットが弱いかも……。
+あなたのアバターはインスタンスにいるみんなのCPUやGPUのリソースを使って表示されているため、極端に重いアバターを使うと迷惑になってしまうことがあります。そこで「みんなの負担を減らして快適にVRChatをできるようにしよう」というのが最適化・軽量化の**本来の**目的ですが、こちらは自分にとってのメリットが弱いかも……。
 
 ## とりあえずプロジェクトに最適化ツールを入れる
 
 [Avatar Optimizer](https://vpm.anatawa12.com/avatar-optimizer/ja/)と[anatawa12's gists pack](https://vpm.anatawa12.com/gists/ja/)をプロジェクトに入れましょう。
 
-インストールが完了したらTools/anatawa12's gist selectorからActualPerformanceWindowにチェックを入れてApply Changesをクリック。これで下準備ができました。
+インストールが完了したら`Tools/anatawa12's gist selector`から`ActualPerformanceWindow`にチェックを入れて`Apply Changes`をクリック。これで下準備ができました。
 
 ## 難しいことはわかんないけどとりあえず軽くしたい
 
@@ -29,7 +29,7 @@
 
 ## ここから先はどっから手をつければええんや
 
-再生ボタンをクリック。先程入れたActualPerformanceWindowが出てきてパフォーマンスを確認できます。
+再生ボタンをクリック。先程入れた`ActualPerformanceWindow`が出てきてパフォーマンスを確認できます。
 
 ここで
 
@@ -46,7 +46,7 @@
 
 ### Texture Memory（テクスチャメモリが多すぎ）
 
-ほとんどの場合はテクスチャの解像度を下げることで改善できます。なお、テクスチャ解像度の変更はUnity上からできるので画像編集ソフトを使う必要はありません。lilAvatarUtilsでテクスチャを一覧でき、解像度の変更やマテリアルからの削除を一括で行えます（参考）。専門の記事も書いているので興味があれば読んでみて下さい。
+ほとんどの場合はテクスチャの解像度を下げることで改善できます。なお、テクスチャ解像度の変更は**Unity上からできるので画像編集ソフトを使う必要はありません**。lilAvatarUtilsでテクスチャを一覧でき、解像度の変更やマテリアルからの削除を一括で行えます（[参考](https://note.com/coffee_monaka/n/n197fb85ade94)）。[専門の記事](https://qiita.com/lilxyzw/items/9aab99f976295971b8b0)も書いているので興味があれば読んでみて下さい。
 
 ### PhysBone Components（PhysBoneコンポーネントが多すぎ）
 
@@ -54,7 +54,7 @@
 
 ### PhysBone Transforms（PhysBoneの影響ボーン数が多すぎ）
 
-[AAO Merge Bone](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-bone/)でボーンを間引けます。また、AAO Merge PhysBoneのEnd PositionをCleared to zeroにせず、Overrideで設定することでも削減できます。
+[AAO Merge Bone](https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-bone/)でボーンを間引けます。また、`AAO Merge PhysBone`のEnd PositionをCleared to zeroにせず、Overrideで設定することでも削減できます。
 
 ### PhysBone Colliders（PhysBoneのコライダーが多すぎ）
 
@@ -62,7 +62,7 @@
 
 ### PhysBone Collision Check Count（PhysBoneのコライダーの判定が多すぎ）
 
-この値はPhysBoneの影響ボーン数*Collider数になります。影響ボーンもコライダーも多いPhysBoneコンポーネントはこの値に莫大な影響を与えるのでボーンかコライダーどちらかを削りましょう。
+この値はPhysBoneの影響ボーン数×Collider数になります。影響ボーンもコライダーも多いPhysBoneコンポーネントはこの値に莫大な影響を与えるのでボーンかコライダーどちらかを削りましょう。
 
 ### Bones（ボーンが多すぎ）
 

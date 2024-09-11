@@ -19,7 +19,8 @@ export const ja = defineConfig({
         link: langName + '/common/',
         collapsed: false,
         items: [
-          { text: '【脱unitypackage】ツールのインポートにVPMを使ってみよう', link: langName + '/common/installwithvpm' }
+          { text: '【脱unitypackage】ツールのインポートにVPMを使ってみよう', link: langName + '/common/installwithvpm' },
+          { text: '【開発者向け】自作物をVPM・VCC対応する方法', link: langName + '/common/makevpmrepos' }
         ]
       },
       {

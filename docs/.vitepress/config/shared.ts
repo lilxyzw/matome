@@ -26,7 +26,7 @@ export const shared = defineConfig({
       copyright: 'Copyright @ 2024-present authors'
     },
     editLink: {
-      pattern: 'https://github.com/lilxyzw/matome/edit/docs/docs/:path',
+      pattern: 'https://github.com/lilxyzw/matome/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
     },
     search: {

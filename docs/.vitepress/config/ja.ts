@@ -28,7 +28,8 @@ export const ja = defineConfig({
         link: langName + '/avatar/',
         collapsed: false,
         items: [
-          { text: 'VRChatアバター最適化・軽量化【脱Very Poor】', link: langName + '/avatar/optimization' }
+          { text: 'VRChatアバター最適化・軽量化【脱Very Poor】', link: langName + '/avatar/optimization' },
+          { text: 'VRChatアバター 改変の流儀（by lil）', link: langName + '/avatar/modification_by_lil' }
         ]
       },
       {

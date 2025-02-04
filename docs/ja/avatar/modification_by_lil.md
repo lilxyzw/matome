@@ -72,7 +72,7 @@ unitypackage内のファイルは基本使わないのですが、マスクテ�
 
 ### FBXをインポート
 
-Sort Hiuerarchy By Nameのチェックを外し、RigをHumanoidに。RigはlilEditorToolboxでモデルインポート系の機能を有効にしている場合は自動でいい感じにしてくれます。加えて新規マテリアルを作ってMaterialsタブで割り当てます。不要なImport～系はオンのままでも影響はないと思いますが、販売アセットを作る場合などで気になる場合はオフにしても良いと思います。
+Sort Hierarchy By Nameのチェックを外し、RigをHumanoidに。RigはlilEditorToolboxでモデルインポート系の機能を有効にしている場合は自動でいい感じにしてくれます。加えて新規マテリアルを作ってMaterialsタブで割り当てます。不要なImport～系はオンのままでも影響はないと思いますが、販売アセットを作る場合などで気になる場合はオフにしても良いと思います。
 
 ### 新規シーンを作成＆保存
 
@@ -118,7 +118,7 @@ psdで直接Unityプロジェクトに保存します。制作ツールに慣れ
 
 ### LI MaterialModifierを使った改変
 
-とりあえずlilycalInventoryに付属のprefabを突っ込みます。
+とりあえずlilycalInventory付属のprefabを突っ込みます。
 
 - `[General] Optimize.prefab` - マテリアルの最適化
 - `[lilToon] Distance Fade.prefab` - 距離フェードの適用（顔を近づけると暗くなるやつ）

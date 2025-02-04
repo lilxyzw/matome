@@ -126,6 +126,24 @@ psdで直接Unityプロジェクトに保存します。制作ツールに慣れ
 
 あと適宜自作のprefabも突っ込みます。輪郭線の`VR時に非表示`のようなパラメーターはアバター全体で統一したいので、こういうパラメーターはLI MaterialModifierで自作prefabを作って複数プロジェクトで共有します。
 
+## VRC Avatar Descriptorの追加
+
+アバターに`VRC Avatar Descriptor`コンポーネントを追加します。
+
+`View`は両目の瞳の中間になるように設定します。多くの場合は顔のポリゴンにめり込む状態になると思います。
+
+`LipSync`は`Viseme Blend Shape`に設定します。基本的には自動でBlendShapeが割り当てられます。
+
+`Eye Look`は動かしすぎない程度にいい感じに。
+
+`Playable Layers`は複雑なギミックを実装しない限りは放置です。
+
+`Lower Body`は`Use Auto-Footsteps for 3 and 4 point tracking`をオン、`Force Locomotion animations for 6 point tracking`をオフにすることが多いです。
+
+`Expressions`も自作ギミックを入れない限りは放置で。
+
+`Colliders`は大体いい感じになっていますが、Headは小さめになりがちなので頭サイズに合わせておきます。
+
 ## PhysBoneの設定
 
 PhysBoneはボーンに直接付けず、アバターのルート直下に新規GameObject（名前PhysBone）を作成し、その中にPhysBoneコンポーネントごとにGameObjectを作って追加していきます。
